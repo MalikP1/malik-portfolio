@@ -14,21 +14,6 @@
   }
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  @apply font-primary bg-primary text-white leading-loose;
-}
-
-.h1 {
-  @apply text-[3rem] xl:text-[5rem] leading-[1.1] font-semibold;
-}
-.h2 {
-  @apply text-[2.25rem] xl:text-[3rem] leading-[1.1] font-semibold;
-}
-.h3 {
-  @apply text-[1.25rem] xl:text-[1.5rem] leading-[1.1] font-semibold;
-}
 @layer utilities {
   .text-balance {
     text-wrap: balance;
@@ -38,5 +23,28 @@ body {
 @layer base {
   :root {
     --radius: 0.5rem;
+  }
+
+  body {
+    color: var(--foreground);
+    background: var(--background);
+    @apply font-primary bg-primary text-white leading-loose;
+  }
+
+  .h1 {
+    @apply text-[3rem] xl:text-[5rem] leading-[1.1] font-semibold;
+  }
+  .h2 {
+    @apply text-[2.25rem] xl:text-[3rem] leading-[1.1] font-semibold;
+  }
+  .h3 {
+    @apply text-[1.25rem] xl:text-[1.5rem] leading-[1.1] font-semibold;
+  }
+
+  .text-outline {
+    -webkit-text-stroke: 0.0625rem #ffffff;
+  }
+  .text-outline-hover {
+    -webkit-text-stroke: 0.0625rem #00ff99;
   }
 }
