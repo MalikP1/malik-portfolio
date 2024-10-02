@@ -5,7 +5,6 @@ import {
   FaCss3,
   FaJs,
   FaReact,
-  FaFigma,
   FaNodeJs,
   FaPython,
 } from "react-icons/fa"
@@ -16,7 +15,7 @@ import {
   SiNextdotjs,
   SiDjango,
   SiMysql,
-  SiSqlite
+  SiSqlite,
 } from "react-icons/si"
 
 // about data
