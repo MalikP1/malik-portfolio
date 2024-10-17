@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button"
 import { FiDownload } from "react-icons/fi"
+import Link from "next/link"
 
 // components
 import Social from "@/components/Social"
@@ -26,10 +27,17 @@ const Home = () => {
               <Button
                 variant="outline"
                 size="lg"
-                className="uppercase flex items-center gap-2"
-              >
+                >
+                <Link
+                  className="uppercase flex items-center gap-2"
+                  href="./assets/resume/Malik-Pinkerton-CV.pdf"
+                  target="_blank"
+                  alt="Malik Pinkerton's CV"
+                  rel="noopener noreferrer"
+                >
                 <span>Download CV</span>
                 <FiDownload className="text-xl"/>
+                </Link>
               </Button>
               <div className="mb-8 xl:mb-0">
                 <Social
